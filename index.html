@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/header-nav-open.css" />
+    <link rel="stylesheet" href="styles/body.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="/styles/sizing.css" />
     <title>Document</title>
   </head>
   <body>
@@ -12,30 +17,39 @@
       <header>
         <a href="index.html" class="logo">
           <img src="images/logo.png" alt="logo" class="logo-img" />
-          <p class="logo-txt">HÜTSAT</p>
+          <p class="logo-txt" id="hmm">HÜTSAT</p>
         </a>
 
-        <ul>
-          <li>Etkinliklerimiz</li>
-          <li>Hakkımızda</li>
-          <li>İletişim</li>
+        <ul id="right-nav">
+          <li><a href="events.html">Etkinliklerimiz</a></li>
+          <li><a href="about.html">Hakkımızda</a></li>
+          <li><a href="contact.html">İletişim</a></li>
         </ul>
-        <div class="hamburger-icon">
-          <img src="images/hamburger.svg" alt="" />
+        <div class="ham-container">
+          <button class="ham-button" id="ham-button">
+            <img
+              src="images/hamburger.svg"
+              alt="hamburger-menu"
+              class="ham-img"
+            />
+          </button>
         </div>
       </header>
 
       <div class="container-main">
         <main>
-          <img class="gif" src="images/coming.gif" alt="coming" />
+          <!-- <img class="gif" src="images/coming.gif" alt="coming" /> -->
+          <div class="typing-demo">Y a k ı n d a . . .</div>
         </main>
       </div>
     </div>
 
     <footer>
       <div class="container-footer">
-        <p class="footer-left-txt">© 2023 HÜTSAT. Tüm hakları saklıdır.</p>
+        <p class="footer-left-txt">© 2023 HÜTSAT | Tüm hakları saklıdır.</p>
       </div>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

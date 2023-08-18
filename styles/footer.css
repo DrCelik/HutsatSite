@@ -1,0 +1,18 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1em;
+  border-top: 1px dashed var(--footer-txt-cl);
+
+  background-color: var(--footer-color);
+  color: var(--footer-txt-cl);
+}

@@ -1,0 +1,114 @@
+/* HEADER BASE */
+
+header,
+ul,
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-bg {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  background-color: var(--header-color);
+}
+
+header {
+  height: 100px;
+
+  position: relative;
+}
+
+/* LOGO SECTION */
+
+.logo,
+.logo-img {
+  height: 100%;
+  width: auto;
+}
+
+.logo {
+  padding: 1.3em;
+}
+
+.logo-img {
+  margin-right: 1em;
+}
+
+.logo:link {
+  text-decoration: none;
+}
+
+.logo-txt {
+  font-size: 3rem;
+  color: var(--logo-txt-cl);
+}
+
+/* RIGHT SECTION */
+
+ul,
+.ham-container {
+  list-style: none;
+  margin-right: 1em;
+}
+
+ul li {
+  margin-left: 1.8em;
+
+  font-size: 1.2rem;
+
+  color: var(--li-cl);
+
+  border-bottom: 1px solid white;
+
+  &:hover {
+    color: var(--li-hv-cl);
+    cursor: pointer;
+  }
+
+  &:active {
+    color: var(--li-ac-cl);
+  }
+}
+
+ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ham-container {
+  height: 100%;
+  width: auto;
+  padding: 1em;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.ham-button {
+  height: 100%;
+  width: auto;
+
+  background: none;
+
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  background-color: var(--bg-color);
+
+  &:hover {
+    background-color: rgb(22, 22, 22);
+  }
+
+  &:active {
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+.ham-img {
+  height: 100%;
+  width: auto;
+  cursor: pointer;
+}

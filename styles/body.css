@@ -1,0 +1,66 @@
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+  position: relative;
+
+  font-family: var(--font-family);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  width: 90%;
+  margin-inline: auto;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.gif {
+  width: 100%;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 70vh;
+}
+
+main {
+  margin-top: 1em;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typing-demo {
+  font-size: 2em;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  animation: typing 2s steps(19), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+
+  color: white;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
